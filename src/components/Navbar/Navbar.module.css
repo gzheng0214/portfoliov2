@@ -1,0 +1,34 @@
+.navbar {
+  height: 11rem;
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: var(--typeface-2);
+  font-weight: 600;
+}
+
+.line {
+  height: 1.2rem;
+  background-color: var(--color-primary-1);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 12rem;
+  height: calc(100% - 1.2rem);
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 76rem;
+  list-style: none;
+}
+
+.links a,
+.links a:visited {
+  text-decoration: none;
+  color: var(--color-secondary-1);
+  text-transform: capitalize;
+}
