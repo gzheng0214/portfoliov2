@@ -23,4 +23,5 @@ html {
 body {
   box-sizing: border-box;
   background-color: var(--color-primary-2);
+  font-family: var(--typeface-2);
 }
