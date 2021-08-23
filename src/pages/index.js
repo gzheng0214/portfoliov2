@@ -1,7 +1,13 @@
 import * as React from "react";
+import Seo from "../components/Seo";
 
 const HomePage = () => {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <Seo />
+      <h1>Home</h1>
+    </>
+  );
 };
 
 export default HomePage;
