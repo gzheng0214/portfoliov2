@@ -25,3 +25,14 @@ body {
   background-color: var(--color-primary-2);
   font-family: var(--typeface-2);
 }
+
+body.blur {
+  overflow: hidden;
+}
+
+body.blur #root > *:not(nav) {
+  filter: blur(2px);
+  pointer-events: none;
+  user-select: none;
+  transition: 0.2s ease-in-out;
+}

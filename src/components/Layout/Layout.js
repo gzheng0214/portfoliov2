@@ -6,11 +6,11 @@ import "../../styles/GlobalStyle.css";
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div id="root">
       <Navbar />
       {children}
       <Footer />
-    </>
+    </div>
   );
 };
 
