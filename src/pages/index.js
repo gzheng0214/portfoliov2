@@ -1,11 +1,11 @@
 import * as React from "react";
-import Seo from "../components/Seo";
+import Seo from "../components/Seo/Seo";
 
 const HomePage = () => {
   return (
     <>
-      <Seo />
-      <h1>Home</h1>
+      <Seo title="Home" />
+      <main>asdas</main>
     </>
   );
 };
