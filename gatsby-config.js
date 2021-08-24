@@ -11,5 +11,18 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GavinZheng`,
+        short_name: `GavinZheng`,
+        start_url: `/`,
+        background_color: `#f4f1ec`,
+        theme_color: `#728073`,
+        display: `minimal-ui`,
+        icon: "src/images/logo.png",
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 };
