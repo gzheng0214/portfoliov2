@@ -1,10 +1,10 @@
 import React from "react";
-import * as styles from "./Footer.module.css";
+import * as styles from "./footer.module.css";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <span>built by gavin zheng</span>
+      <span>&copy; gavin zheng {new Date().getFullYear()}</span>
     </footer>
   );
 };
