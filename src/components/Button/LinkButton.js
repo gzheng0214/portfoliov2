@@ -15,8 +15,12 @@ const LinkButton = ({ dark, arrow, text, url, email, link, hoverDark }) => {
       </Link>
     );
   } else {
+    let inputProps;
+    email
+      ? (inputProps = {})
+      : (inputProps = { target: "_blank", rel: "noopener noreferrer" });
     return (
-      <a className={style} href={url} target={email ? "" : "_blank"}>
+      <a className={style} href={url} {...inputProps}>
         {text}
         {arrow ? <BsArrowRight className={styles.arrow} /> : null}
       </a>
