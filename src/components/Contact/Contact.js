@@ -13,13 +13,14 @@ const Contact = () => {
             Feel free to reach out if you have any questions or just want to
             have a chat!
           </p>
+
           <LinkButton
             text="Send me an email"
             url="mailto:gzheng0214@gmail.com"
             email
             dark
             hoverDark
-            arrow
+            arrow={{ maxWidth: "201px" }}
           />
         </div>
       </div>

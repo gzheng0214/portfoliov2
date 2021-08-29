@@ -19,7 +19,14 @@ const Hero = () => {
         <h1>a web developer</h1>
         <div className={styles.heroButtons}>
           <LinkButton text="view resume" url={"/Gavins_Resume.pdf"} />
-          <LinkButton text="view projects" url={"/projects"} link dark arrow />
+
+          <LinkButton
+            text="view projects"
+            url={"/projects"}
+            link
+            dark
+            arrow={{ maxWidth: "167px" }}
+          />
         </div>
       </div>
     </section>

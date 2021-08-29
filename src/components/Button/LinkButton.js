@@ -7,8 +7,9 @@ const LinkButton = ({ dark, arrow, text, url, email, link, hoverDark }) => {
   const style = `${styles.button} ${dark ? styles.dark : styles.primary} ${
     hoverDark ? styles.hoverDark : ""
   }`;
+  let renderedButton;
   if (link) {
-    return (
+    renderedButton = (
       <Link to={url} className={style}>
         {text}
         {arrow ? <BsArrowRight className={styles.arrow} /> : null}
@@ -19,12 +20,17 @@ const LinkButton = ({ dark, arrow, text, url, email, link, hoverDark }) => {
     email
       ? (inputProps = {})
       : (inputProps = { target: "_blank", rel: "noopener noreferrer" });
-    return (
+    renderedButton = (
       <a className={style} href={url} {...inputProps}>
         {text}
         {arrow ? <BsArrowRight className={styles.arrow} /> : null}
       </a>
     );
+  }
+  if (arrow) {
+    return <div style={arrow}>{renderedButton}</div>;
+  } else {
+    return renderedButton;
   }
 };
 
