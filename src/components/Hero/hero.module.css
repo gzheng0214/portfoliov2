@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 10rem 0;
+  width: fit-content;
   margin: auto;
 }
 
@@ -16,7 +17,6 @@
   flex-direction: column;
   align-items: center;
   color: var(--color-secondary-1);
-  width: 100%;
 }
 
 .hero-info h3 {
