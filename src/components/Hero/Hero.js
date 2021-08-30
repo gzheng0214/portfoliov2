@@ -18,7 +18,7 @@ const Hero = () => {
         <h3>Hi, I'm Gavin.</h3>
         <h1>a web developer</h1>
         <div className={styles.heroButtons}>
-          <LinkButton text="view resume" url={"/Gavins_Resume.pdf"} />
+          <LinkButton text="view resume" url={"/resume.pdf"} />
 
           <LinkButton
             text="view projects"
