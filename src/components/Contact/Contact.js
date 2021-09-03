@@ -11,7 +11,7 @@ const Contact = () => {
         <div className={styles.info}>
           <p>
             Feel free to reach out if you have any questions or just want to
-            have a chat!
+            have a chat! I am currently looking for new opportunities!
           </p>
 
           <LinkButton
