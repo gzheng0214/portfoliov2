@@ -1,12 +1,22 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import Seo from "../components/Seo/Seo";
+import LinkButton from "../components/Button/LinkButton";
+import * as styles from "../styles/notFound.module.css";
 
 const NotFoundPage = () => {
   return (
     <>
       <Seo title="Not Found" />
-      <div>Not Found</div>
+      <main className={styles.notFound}>
+        <h1 className={styles.title}>Page not found</h1>
+        <LinkButton
+          dark
+          link
+          text="Go Home"
+          url="/"
+          arrow={{ maxWidth: "136px" }}
+        />
+      </main>
     </>
   );
 };
