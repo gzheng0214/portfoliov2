@@ -13,6 +13,7 @@ const Hero = () => {
         width={150}
         quality={95}
         className={styles.profileImg}
+        imgStyle={{ borderRadius: "50%" }}
       />
       <div className={styles.heroInfo}>
         <h3>Hi, I'm Gavin.</h3>

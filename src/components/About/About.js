@@ -16,6 +16,7 @@ const About = () => {
         width={180}
         quality={95}
         className={styles.profileImg}
+        imgStyle={{ borderRadius: "50%" }}
       />
       <div className={styles.aboutTitle}>
         <h1>Gavin Zheng</h1>
