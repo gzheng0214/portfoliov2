@@ -4,15 +4,21 @@ import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
 
-const SEO = ({ title, description }) => {
+const SEO = ({ title, description, image }) => {
   const { pathname } = useLocation();
   const { site } = useStaticQuery(query);
-  const { defaultTitle, titleTemplate, defaultDescription, siteUrl } =
-    site.siteMetadata;
+  const {
+    defaultTitle,
+    titleTemplate,
+    defaultDescription,
+    siteUrl,
+    defaultImage,
+  } = site.siteMetadata;
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
+    image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   };
 
@@ -25,17 +31,13 @@ const SEO = ({ title, description }) => {
       }}
     >
       <meta name="description" content={seo.description} />
+      <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
         <meta property="og:description" content={seo.description} />
       )}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Raleway:wght@400;500;600&display=swap"
-        rel="stylesheet"
-      />
+      {seo.image && <meta property="og:image" content={seo.image} />}
     </Helmet>
   );
 };
@@ -58,6 +60,7 @@ const query = graphql`
         titleTemplate
         defaultDescription: description
         siteUrl: url
+        defaultImage: image
       }
     }
   }

@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: "Gavin Zheng",
-    description: "Gavin Zheng is an aspiring web developer.",
+    description: "Gavin Zheng's personal website.",
     titleTemplate: `%s | Gavin Zheng`,
-    url: "http://localhost:8000",
+    url: "https://www.gzheng.dev/",
+    image: `/mainImg.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
