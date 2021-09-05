@@ -22,7 +22,7 @@ const data = [
     tools: ["React", "JavaScript", "CSS/SCSS"],
     description: "First iteration of my personal website.",
     github: "https://github.com/gzheng0214/portfolio",
-    demo: "https://www.gzheng.dev/",
+    demo: "https://gzhengv1.netlify.app/",
     imgName: "portfoliov1",
   },
   {
