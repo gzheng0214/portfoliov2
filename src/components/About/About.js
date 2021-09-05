@@ -19,7 +19,7 @@ const About = () => {
       />
       <div className={styles.aboutTitle}>
         <h1>Gavin Zheng</h1>
-        <h3>gzheng0214@gmail.com</h3>
+        <h2>gzheng0214@gmail.com</h2>
         <span>Web Developer</span>
       </div>
       <div className={styles.aboutDescription}>

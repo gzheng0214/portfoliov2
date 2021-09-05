@@ -16,6 +16,7 @@ const Social = () => {
             key={index}
             {...inputProps}
             className={styles.socialLink}
+            aria-label={link.label}
           >
             {link.icon}
           </a>
