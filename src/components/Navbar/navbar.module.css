@@ -30,7 +30,7 @@
 .links {
   display: flex;
   justify-content: space-between;
-  max-width: 45rem;
+  max-width: 20rem;
   width: 100%;
   list-style: none;
 }

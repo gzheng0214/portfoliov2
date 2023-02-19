@@ -21,14 +21,11 @@ const About = () => {
       <div className={styles.aboutTitle}>
         <h1>Gavin Zheng</h1>
         <h2>gzheng0214@gmail.com</h2>
-        <span>Web Developer</span>
+        <span>Software Engineer</span>
       </div>
       <div className={styles.aboutDescription}>
         <ImQuotesLeft className={styles.quotes} />
-        <p>
-          Hi, I'm Gavin, an anspiring web developer based in Bayonne, NJ. I'm
-          currently a senior studying computer science at Boston University.
-        </p>
+        <p>Hi, I'm Gavin, a full-stack developer based in Boston, MA.</p>
       </div>
       <LinkButton
         text="view resume"
